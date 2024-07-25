@@ -1,0 +1,27 @@
+tr{
+    display: inline-block;
+}
+td{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #605454;
+}
+.num{
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 3px;
+    display: block;
+    clear: both;
+}
+.word{
+    background-color: #fff;
+    border-top: 0;
+    text-align: center;
+    padding: 3px;
+    display: block;
+    clear: both;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+}

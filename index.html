@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <title>旗語翻譯</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=on">
+    <meta name="keywords" content="旗語, 童軍, 童軍旗語, 旗語翻譯, 紅梟">
+    <meta name="description" content="由甲工紅梟畢業學長所製作的旗語翻譯網頁，在輸入框中輸入收到的電碼，便可直接得知所代表的文字（也可以由文字轉為電碼）">
+    <meta name="copyright" content="火海創意">
+    <meta name="author" content="偉摳">
+    <meta name="language" content="zh-TW">
+    <meta name="distribution" content="Taiwan">
+    <meta name="screen-orientation" content="portrait">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+</head>
+<body>
+    <header>
+        <h1>旗　　語</h1>
+        <button id="menu">&#9776;</button>
+        <img src="./favicon.ico">
+    </header>
+    <main>
+        <section>   <!--電碼輸入框-->
+            <div class="code-box">
+                <div class="code-item"></div>
+                <div class="code-item"></div>
+                <div class="code-item"></div>
+                <div class="code-item"></div>
+
+                <input type="text" class="code-input" maxlength="4">
+            </div>
+        </section>
+        <section>   <!--顯示圖片-->
+            <div class="flag-box">
+                <div class="flag-img">  <!--1-->
+                    <img id="flag-img1" src="">
+                </div>
+                <div class="flag-img">  <!--2-->
+                    <img id="flag-img2" src="">
+                </div>
+                <div class="flag-img">  <!--3-->
+                    <img id="flag-img3" src="">
+                </div>
+                <div class="flag-img">  <!--4-->
+                    <img id="flag-img4" src="">
+                </div>
+            </div>
+        </section>
+        <section>   <!--電碼翻譯-->
+            <div class="translate">
+                <div class="tran-show">
+                    <span>對應文字：</span>
+                    <table id="show-word"></table>
+                </div>
+            </div>
+        </section>
+        <section>   <!--文字翻譯-->
+            <div class="word-tran">
+                <input type="text" class="in-word" placeholder="翻譯文字">
+            </div>
+            <div class="word-clear">
+                <button type="button" id="clear">清除</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2023 火海創意 All Rights Reserved</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
